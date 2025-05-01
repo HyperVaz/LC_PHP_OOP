@@ -2,7 +2,7 @@
 
 namespace App;
 
-class Worker
+abstract class Worker implements WorkerInterface
 {
     private string $name;
     private int $age;
@@ -26,10 +26,6 @@ class Worker
     }
 
 
-    public function work()
-    {
-        print_r('working');
-    }
 
     /**
      * @return string

@@ -4,6 +4,7 @@ namespace App;
 
 class Visitor
 {
+    use HasRest;
     public string $name;
     public int $age;
     public array $hours;
